@@ -268,45 +268,110 @@ footer p {
    ========================= */
 @media (max-width: 768px) {
 
-    nav {
-        display: none;
-    }
+  /* =========================
+     HEADER
+     ========================= */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 10px;
+  }
 
-    .footer-navigation {
-        display: block;
-    }
+  #logo {
+    margin: 0;
+    width: 140px;
+    height: 140px;
+  }
 
-    #trailer-container {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        margin-left: 0;
-    }
+  /* Escondemos menu desktop (prepara menu mobile futuro) */
+  nav {
+    display: none;
+  }
 
-    .content {
-        width: 95%;
-        flex-direction: column;
-    }
+  /* =========================
+     SEÇÃO DO VÍDEO
+     ========================= */
+  #trailer-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .trailer {
-        width: 100%;
-    }
+  .content {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    #sinopse {
-        width: 95%;
-    }
+  .trailer {
+    width: 100%;
+  }
 
-    .description {
-        width: 100%;
-    }
+  #sinopse {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
 
-    .button {
-        width: 90%;
-        margin-top: 30px;
-    }
+  .description {
+    width: 100%;
+    font-size: 18px;
+  }
 
-    .cards-content {
-        grid-template-columns: 1fr;
-        margin-top: 150px;
-    }
+  .button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* =========================
+     CARDS
+     ========================= */
+  .cards-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 80px;
+  }
+
+  .card {
+    height: 420px;
+  }
+
+  /* =========================
+     FOOTER
+     ========================= */
+  footer {
+    margin-left: 0;
+    padding: 20px 0;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  .footer-navigation {
+    display: block;
+  }
+}
+
+
+
+/* =========================
+   AJUSTES FINOS DE RESPONSIVIDADE
+   (não afetam desktop)
+   ========================= */
+
+/* Evita estouro horizontal indesejado */
+body {
+  overflow-x: hidden;
+}
+
+/* Garante que containers não passem da tela */
+#trailer-container,
+.menu-cards-container {
+  max-width: 100%;
 }
