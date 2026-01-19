@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kdam+Thmor+Pro&family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+
+
+html {
+    font-size: 20px;
+    background-image: url('https://i.pinimg.com/564x/64/6a/ad/646aad96990be17f5451f87e73337f7b.jpg');
+    background-size: auto;
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+nav {
+    width: 70%;
+}
+
+
+ul {
+    display: flex;
+    width: 70%;
+    position: absolute;
+    justify-content: space-between;
+}
+
+
+li {
+    width: 1%;
+    height: 17px
+    list-style none;
+    color: brown;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 55px;
+    padding: 5px 10px;
+    background-color: antiquewhite;
+        text-align: center;
+        width: 350px;
+        height: 70px;
+        margin: 10px 0px;
+        margin-top: 20px;
+        padding: 5px 25px;
+        border: 6px solid black;
+        border-radius: 35px;
+        display:inline-block;
+    transition: 1s;    
+}
+
+
+    li:hover {
+        color: black;
+        background-color: rgba(255, 99, 71, 0.6);
+        font: bold 700;
+        transform: scale(1.1);
+    }
+
+
+#logo {
+    width: 180px;
+    height: 180px;
+    margin-top: 100px;
+    margin-left: -170px;
+    margin-right: -20px;
+    transition: 1s;
+}
+
+    #logo:hover {
+        transform: scale(1.2);
+    }
+
+#trailer-container {
+        width: 120%;
+        height: 700px;
+        display: flex;
+        margin-top: 65px;
+        margin-left: 350px;
+    }
+    
+        .content {
+            width: 60%;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+        }
+    
+        .trailer {
+            width: 70%;
+        }
+    
+#sinopse {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 60px;
+    }
+    
+        .description {
+            color: #fff;
+            font-size: 25px;
+            font-family: 'Ubuntu', sans-serif;
+            width: 80%;
+        }
+    
+        .button {
+            width: 250px;
+            height: 70px;
+            background-color: rgba(255, 99, 71, 0.6);
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .8s;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            margin-top: 25px;   
+        }
+    
+            .button:hover{
+                background-color: rgba(255, 99, 71, 1);
+                color: #000;
+                border: 5px dotted black;
+                border-radius: 20px;
+        }
+
+
+.tradicionais-tema {
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+    width: 92%;
+    height: 80px;
+    background-color: antiquewhite;
+    margin: 60px 40px 10px 35px;
+    padding: 15px 20px 5px 15px;
+    border: 10px double green;
+    border-radius: 45px;
+    }
+
+
+.pratos-cards-container1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+            
+        .cards-content1 {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 50px;
+            row-gap: 45px;
+            margin-top: 30px;
+            margin-left: -40px;
+            margin-bottom: 40px;
+        }
+            
+            .card {
+                width: 100%;
+                height: 400px;
+                background-size: cover;
+                background-position: 50% 50%;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 1s;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 0px 0px 20px 10px;
+                color: black;
+                font-size: 25px;
+                font-family: 'Ubuntu', sans-serif;
+                border: 6px solid black;
+                border-radius: 20px;
+            }
+            
+                .card:hover {
+                    transform: scale(1.12);
+                    border: 6px double green;
+                    border-radius: 20px;
+                    color: green;
+                    font-size: 36px;
+        
+                }
+            
+    .banner-1 {
+        background-image: url(./imagens-para-background/tradicional1.jpg);
+    }
+         
+    .banner-2 {
+        background-image: url(./imagens-para-background/tradicional2.jpg);
+    }
+           
+    .banner-3 {
+        background-image: url(./imagens-para-background/tradicional3.jpg);
+    }
+      
+    .banner-4 {
+        background-image: url(./imagens-para-background/tradicional4.jpg);
+    }
+
+    .banner-5 {
+        background-image: url(./imagens-para-background/tradicional5.jpg);
+    }
+
+    .banner-6 {
+        background-image: url(./imagens-para-background/tradicional6.jpeg);
+    }
+
+    .banner-7 {
+        background-image: url(./imagens-para-background/tradicional7.jpg);
+    }
+
+    .banner-8 {
+        background-image: url(./imagens-para-background/tradicional8.jpg);
+    }
+
+
+.internacionais-tema {
+    font-size: 1.2em;
+        text-align: center;
+        color: black;
+        width: 92%;
+        height: 80px;
+        background-color: antiquewhite;
+        margin: 100px 40px 10px 35px;
+        padding: 15px 20px 5px 15px;
+        border: 10px double brown;
+        border-radius: 45px;
+    }
+
+
+.pratos-cards-container2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+            
+        .cards-content2 {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 50px;
+            row-gap: 45px;
+            margin-top: 30px;
+            margin-left: -40px;
+            margin-bottom: 40px;
+        }
+            
+            .card {
+                width: 100%;
+                height: 400px;
+                background-size: cover;
+                background-position: 50% 50%;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 1s;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 0px 0px 20px 10px;
+                color: black;
+                font-size: 25px;
+                font-family: 'Ubuntu', sans-serif;
+                border: 6px solid black;
+                border-radius: 20px;
+            }
+            
+                .card:hover {
+                    transform: scale(1.12);
+                    border: 6px double brown;
+                    border-radius: 20px;
+                    color: brown;
+                    font-size: 36px;
+        
+                }
+
+
+    .banner-10 {
+        background-image: url(./imagens-para-background/internacional10.jpg);
+    }
+                     
+    .banner-11 {
+        background-image: url(./imagens-para-background/internacional11.jpg);
+    }
+                       
+    .banner-12 {
+        background-image: url(./imagens-para-background/internacional12.jpg);
+    }
+                  
+    .banner-13 {
+        background-image: url(./imagens-para-background/internacional13.jpg);
+    }
+            
+    .banner-14 {
+        background-image: url(./imagens-para-background/internacional14.jpg);
+    }
+            
+    .banner-15 {
+        background-image: url(./imagens-para-background/internacional15.jpg);
+    }
+            
+    .banner-16 {
+        background-image: url(./imagens-para-background/internacional16.jpg);
+    }
+            
+    .banner-17 {
+        background-image: url(./imagens-para-background/internacional17.jpg);
+    }
+
+
+footer {
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: 12px;
+    margin-left: -150px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(max-width:768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 21%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 99%;
+    }
+
+    .button {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
