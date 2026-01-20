@@ -359,6 +359,93 @@ footer p {
 }
 
 
+/* =========================
+   AJUSTE DE TIPOGRAFIA (MOBILE)
+   ========================= */
+
+/* Evita textos gigantes no mobile */
+body {
+  font-size: 16px;
+}
+
+/* Texto dos cards */
+.card {
+  font-size: 20px;
+}
+
+/* Texto ao passar o mouse (mobile não precisa de scale grande) */
+.card:hover {
+  transform: none;
+  font-size: 22px;
+}
+
+/* Texto do rodapé */
+footer p {
+  font-size: 12px;
+}
+
+/* Remove efeitos exagerados no mobile */
+li:hover {
+  transform: none;
+}
+
+#logo:hover {
+  transform: none;
+}
+
+/* Segurança contra estouro horizontal */
+* {
+  max-width: 100%;
+}
+
+
+/* =========================
+   FOOTER - NAVEGAÇÃO MOBILE
+   Corrige herança do menu desktop
+   ========================= */
+
+.footer-navigation {
+  width: 100%;
+}
+
+.footer-list {
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Sobrescreve o li gigante do menu principal */
+.footer-list li {
+  width: auto;
+  height: auto;
+
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 0;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+
+  color: #fff;
+  text-align: center;
+
+  transform: none;
+}
+
+/* Hover não faz sentido no mobile */
+.footer-list li:hover {
+  background-color: transparent;
+  color: #fff;
+  transform: none;
+}
+
+
+
 
 /* =========================
    AJUSTES FINOS DE RESPONSIVIDADE
