@@ -1,85 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+    <!-- Configurações básicas do documento -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsividade (mobile-first) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba / SEO -->
     <title>Restaurant</title>
+
+    <!-- Ícone do site (favicon) -->
     <link rel="shortcut icon" href="assets/icons/logo-favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Estilos principais do site -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    
+
+    <!-- =========================
+         CABEÇALHO DO SITE
+         Contém logo e navegação principal
+    ========================== -->
     <header>
-        <img id="logo" src="https://previews.123rf.com/images/antoshkaforever/antoshkaforever1507/antoshkaforever150700180/44355376-restaurant-logo-idea-for-the-sign-logo-label-element.jpg" />
-        <nav>
+
+        <!-- Logo principal do restaurante -->
+        <img
+            id="logo"
+            src="https://previews.123rf.com/images/antoshkaforever/antoshkaforever1507/antoshkaforever150700180/44355376-restaurant-logo-idea-for-the-sign-logo-label-element.jpg"
+            alt="Logo do restaurante"
+        >
+
+        <!-- Navegação principal -->
+        <nav aria-label="Navegação principal">
             <ul>
-                <a href="./pages/pratos.html">
-                    <li>PRATOS</li>
-                </a>
-
-                <a href="./pages/bebidas.html">
-                    <li>BEBIDAS</li>
-                </a>
-
-                <a href="./pages/sobremesas.htm">
-                    <li>SOBREMESAS</li>
-                </a>
+                <li><a href="./pages/pratos.html">Pratos</a></li>
+                <li><a href="./pages/bebidas.html">Bebidas</a></li>
+                <li><a href="./pages/sobremesas.htm">Sobremesas</a></li>
             </ul>
         </nav>
+
     </header>
 
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+    <main>
 
-    <div id="trailer-container">
-        <div class="content">
-            <video controls class="trailer">
-                <source src="./vídeos-para-background/vídeo-propaganda.mp4" type="video/mp4">
-                Seu navegador não possui suporte para vídeos!
-            </video>
-            <div id="sinopse">
-                <p class="description">
-                    Viva uma experiência inesquecível em um dos restaurantes mais conhecidos e exclusivos do mundo. Ingredientes frescos e cultivados localmente. Venha viver uma noite de degustação de comida especial, deliciosas sobremesas e bons drinks.
-                </p>
-                <a href="./pages/delivery.html"><button class="button">Compre Delivery</button></a>
+        <!-- Seção de destaque com vídeo e chamada principal -->
+        <section id="trailer-container">
+            <div class="content">
+
+                <!-- Vídeo promocional do restaurante -->
+                <video controls class="trailer">
+                    <source src="./vídeos-para-background/vídeo-propaganda.mp4" type="video/mp4">
+                    Seu navegador não possui suporte para vídeos!
+                </video>
+
+                <!-- Texto institucional + CTA -->
+                <div id="sinopse">
+                    <p class="description">
+                        Viva uma experiência inesquecível em um dos restaurantes mais conhecidos e exclusivos do mundo.
+                        Ingredientes frescos e cultivados localmente. Venha viver uma noite de degustação de comida especial,
+                        deliciosas sobremesas e bons drinks.
+                    </p>
+
+                    <!-- Botão de chamada para o delivery -->
+                    <a href="./pages/delivery.html">
+                        <button class="button">Compre Delivery</button>
+                    </a>
+                </div>
+
             </div>
-        </div>
-    </div>
+        </section>
 
+        <!-- Seção de cards com categorias do menu -->
+        <section class="menu-cards-container">
+            <div class="cards-content">
+                <!-- Cada card representa uma categoria -->
+                <div class="card banner-1">Pratos Tradicionais!</div>
+                <div class="card banner-2">Pratos Internacionais!</div>
+                <div class="card banner-3">Bebidas Maravilhosas!</div>
+                <div class="card banner-4">Sobremesas Incríveis!</div>
+            </div>
+        </section>
 
-    <div class="menu-cards-container">
-        <div class="cards-content">
-            <div class="card banner-1">Pratos Tradicionais!</div>
-            <div class="card banner-2">Pratos Internacionais!</div>
-            <div class="card banner-3">Bebidas Maravilhosas!</div>
-            <div class="card banner-4">Sobremesas Incríveis!</div>
-        </div>
-    </div>
+    </main>
 
-
+    <!-- =========================
+         RODAPÉ
+         Informações legais e navegação secundária
+    ========================== -->
     <footer>
-        <img style="object-fit: contain;" id="logo" src="./assets/icons/logo-restaurant.jpg" />
-        <span>Todos os direitos reservados. ©</span>
-        <span>Desenvolvido por: Geovane Barbosa</span>
 
-        <nav class="footer-navigation">
+        <!-- Logo no rodapé -->
+        <img
+            id="logo"
+            src="./assets/icons/logo-restaurant.jpg"
+            alt="Logo do restaurante"
+            style="object-fit: contain;"
+        >
+
+        <!-- Informações institucionais -->
+        <p>Todos os direitos reservados. ©</p>
+        <p>Desenvolvido por: Geovane Barbosa</p>
+
+        <!-- Navegação secundária -->
+        <nav class="footer-navigation" aria-label="Navegação do rodapé">
             <ul class="footer-list">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./pages/pratos.html">
-                    <li>Pratos</li>
-                </a>
-                <a href="./pages/bebidas.html">
-                    <li>Bebidas</li>
-                </a>
-                <a href="./pages/sobremesas.htm">
-                    <li>Sobremesas</li>
-                </a>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/pratos.html">Pratos</a></li>
+                <li><a href="./pages/bebidas.html">Bebidas</a></li>
+                <li><a href="./pages/sobremesas.htm">Sobremesas</a></li>
             </ul>
         </nav>
-    </footer>
-    
-</body>
 
+    </footer>
+
+</body>
 </html>
